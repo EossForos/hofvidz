@@ -2,14 +2,17 @@
 {% block content %}
     <div class="container">
         <h2>
-            Create Hall of Fame
+            Edit Hall of Fame
         </h2>
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit" class="btn btn-primary">
-                Create
+                Update
             </button>
+            <a href="{% url 'delete_hall' hall.id %}" class="btn btn-danger">
+            Delete this Hall of Fame
+            </a>
         </form>
     </div>
 {% endblock %}
