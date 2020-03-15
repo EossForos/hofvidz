@@ -6,10 +6,30 @@
         </h2>
         <form method="post">
             {% csrf_token %}
-            {{ form.as_p }}
+            {% load widget_tweaks %}
+
+            {% for field in form %}
+                <div class="form-group {% if field.errors %} alert alert-danger {% endif %}">
+                    {{ field.errors }}
+                    {{ field.label_tag }}
+                    {% render_field field class="form-control" %}
+                </div>
+            {% endfor %}
+
             <button type="submit" class="btn btn-primary">
-                Create
+                Add Video
             </button>
+        </form>
+
+        <br>
+
+        <h2>
+            You want to search a video ?!
+        </h2>
+        <form>
+            <table>
+                {{ search_form }}
+            </table>
         </form>
     </div>
 {% endblock %}
