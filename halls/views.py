@@ -1,5 +1,5 @@
 from django.contrib.auth.forms import UserCreationForm
-from django.http import Http404
+from django.http import Http404, JsonResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views import generic
@@ -60,6 +60,24 @@ def add_video(request, pk):
                    'hall':hall})
 
 
+
+def video_search(request):
+    search_form = SearchForm(request.GET)
+    if search_form.is_valid():
+        encoded_search_term = urllib.parse.quote(search_form.cleaned_data['search_term'])
+        response = requests.get(f'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q={ encoded_search_term }&key={ YOUTUBE_API_KEY }')
+        return JsonResponse(response.json())
+    return JsonResponse({'error': 'Not able to validate form'})
+
+
+
+class DeleteVideo(generic.DeleteView):
+    model = Video
+    template_name = 'halls/delete_video.html'
+    success_url = reverse_lazy('dashboard')
+
+
+
 class SignUp(generic.CreateView):
     form_class = UserCreationForm
     success_url = reverse_lazy('home')
@@ -72,11 +90,14 @@ class SignUp(generic.CreateView):
         login(self.request, user)
         return view
 
+
+
 # def create_hall(request):
-#     if request.meyhod == 'POST':
+#     if request.method == 'POST':
 #         pass
 #     else:
 #         pass
+
 
 
 class CreateHall(generic.CreateView):
