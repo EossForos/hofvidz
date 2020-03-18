@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41d79d0d-5d7f-43f8-9d82-6316bb5b0a50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/halls/delete_video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/halls/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/halls/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hofvidz/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hofvidz/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/halls/add_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/halls/add_video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/req.txt" beforeDir="false" afterPath="$PROJECT_DIR$/req.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/halls/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/halls/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/halls/create_hall.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/halls/create_hall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/halls/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/halls/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/halls/detail_hall.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/halls/detail_hall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/halls/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/halls/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/halls/update_hall.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/halls/update_hall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/signup.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +103,9 @@
       <workItem from="1584203844756" duration="5058000" />
       <workItem from="1584261279477" duration="5567000" />
       <workItem from="1584291992242" duration="10231000" />
-      <workItem from="1584369592070" duration="9702000" />
+      <workItem from="1584369592070" duration="10042000" />
+      <workItem from="1584519078399" duration="9600000" />
+      <workItem from="1584528728715" duration="2713000" />
     </task>
     <servers />
   </component>

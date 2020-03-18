@@ -116,3 +116,5 @@ dmypy.json
 .pyre/
 
 # End of https://www.gitignore.io/api/django
+seed_data.json
+venv/include/
